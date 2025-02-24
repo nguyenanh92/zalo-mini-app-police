@@ -3,8 +3,8 @@ import { HomeHeader, Utinities, ListOA, NewsSection } from "@components";
 import PageLayout from "@components/layout/PageLayout";
 import { APP_UTINITIES } from "@constants/utinities";
 import { useStore } from "@store";
-import Contacts from "./Contacts";
-import Procedures from "./Procedures";
+// import Contacts from "./Contacts";
+// import Procedures from "./Procedures";
 
 const HomePage: React.FunctionComponent = () => {
     const [organization] = useStore(state => [
@@ -24,8 +24,8 @@ const HomePage: React.FunctionComponent = () => {
         >
             <Utinities utinities={APP_UTINITIES} />
             <ListOA />
-            <Contacts />
-            <Procedures />
+            {/* <Contacts />
+            <Procedures /> */}
             <NewsSection />
         </PageLayout>
     );
